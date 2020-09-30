@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "tb_user")
 public class User implements Serializable{
@@ -25,6 +27,7 @@ public class User implements Serializable{
 	private String phone;
 	private String password;
 	
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Order> orders = new ArrayList<>();
 	
@@ -48,11 +51,11 @@ public class User implements Serializable{
 		this.id = id;
 	}
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 
-	public void setNome(String nome) {
+	public void setName(String nome) {
 		this.name = nome;
 	}
 
@@ -64,19 +67,19 @@ public class User implements Serializable{
 		this.email = email;
 	}
 
-	public String getTelefone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setTelefone(String telefone) {
+	public void setPhone(String telefone) {
 		this.phone = telefone;
 	}
 
-	public String getSenha() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setSenha(String senha) {
+	public void setPassword(String senha) {
 		this.password = senha;
 	}
 	
@@ -84,18 +87,6 @@ public class User implements Serializable{
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public String getPassword() {
-		return password;
 	}
 
 	public List<Order> getOrders() {
