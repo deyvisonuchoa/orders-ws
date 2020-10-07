@@ -1,0 +1,16 @@
+postgres://
+
+#usuario
+dfmfuxcrkyjuur
+
+#senha
+019f86a99b62f5dce83682c3d1e8b861d83b415b26f4c16e758efaafd78941bd
+
+#url
+ec2-23-20-70-32.compute-1.amazonaws.com
+
+#host
+5432
+
+#database
+d3bsishsqc5fhn
