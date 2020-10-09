@@ -90,6 +90,32 @@ public class TestConfig implements CommandLineRunner{
 		o1.setPayment(pay1);
 		
 		orderRepository.save(o1);
+		
+//		NumberFormat PERCENTFORMAT = NumberFormat.getPercentInstance();
+//		PERCENTFORMAT.setMaximumFractionDigits(2);
+//		PERCENTFORMAT.setMinimumFractionDigits(2);
+//		String RESULT = PERCENTFORMAT.format(0.25);
+//		String RESULT2 = PERCENTFORMAT.format(0.025);
+//		String RESULT3 = PERCENTFORMAT.format(0.0025);
+//		java.text.NumberFormat.getPercentInstance().format(0.25);
+//		
+//		System.out.println("---------------------");
+//		System.out.println(RESULT + " -> 0.25");
+//		System.out.println(RESULT2 + " -> 0.025");
+//		System.out.println(RESULT3 + " -> 0.0025");
+//		System.out.println("---------------------");
+		
+//		BigDecimal totalIrrf = new BigDecimal(56900.93);
+//		BigDecimal valorTributavel = new BigDecimal(7824.52);
+//		
+//		System.out.println( valorTributavel.divide(totalIrrf,20, RoundingMode.HALF_UP).multiply( BigDecimal.valueOf( 100 ) ) );
+//		
+//		Date d1 = new Date(2004, 12, 31);
+//		Date d2 = new Date(2008, 12, 31);
+//		Date d3;
+//		d3 = (d1.before(d2)) ? d1 : d2;
+//		
+//		System.out.println(d3);
 	}
 
 }
